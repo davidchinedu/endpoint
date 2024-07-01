@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "ip-geolocation-api-javascript-sdk": "^1.0.9",
+    "node-fetch": "^3.3.2",
     "openweather-apis": "^4.5.0"
   }
 }
