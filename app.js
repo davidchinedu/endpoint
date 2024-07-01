@@ -19,7 +19,7 @@ app.listen(4000, ()=>{
 app.get("/api/hello", async(req, res)=>{
 const {visitor_name}=req.query;
 if(visitor_name){
-const clientip= req.ip
+const clientip= req.ip 
 //'102.216.201.31'
 
 fetch(`http://ip-api.com/json/${clientip}`)
@@ -39,7 +39,7 @@ weather.getAllWeather((err, JSONObj) => {
     res.send({
         "client_ip": clientip,
   "location": data.city,
-  "greeting": `Hello, ${visitor_name}!, the temperature is ${temperature}degrees Celcius in ${data.city} `
+  "greeting": `Hello, ${visitor_name}!, the temperature is ${temperature} degrees Celcius in ${data.city}`
     })
 });
 
