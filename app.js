@@ -18,15 +18,15 @@ app.listen(4000, ()=>{
 
 app.get("/api/hello", async(req, res)=>{
 const {visitor_name}=req.query;
-if(visitor_name == "mark"){
-const clientip='102.216.201.31'
+if(visitor_name){
+const clientip= req.ip
+//'102.216.201.31'
 
 fetch(`http://ip-api.com/json/${clientip}`)
 .then((res)=>{
     return res.json();
 })
 .then((data)=>{
- console.log(`data is :${data}`)
 weather.setCity(data.city);
 weather.getAllWeather((err, JSONObj) => {
     if (err) {
