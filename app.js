@@ -45,6 +45,6 @@ weather.getAllWeather((err, JSONObj) => {
 
 })
 }
-else{res.send("invalid query string. use this instead:  visitor_name='mark'")}
+else{res.send("invalid query string. use this insteaddddddd:  visitor_name='mark'")}
 
 })
